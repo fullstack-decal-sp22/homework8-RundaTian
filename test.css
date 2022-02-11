@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    color: rgb(42, 165, 104);
+}
+
+h1 {
+    color:black;
+    width: 1000px;
+}
+
+h2 {
+    color:chocolate;
+    width: 1000px;
+}
+
+
+.bee {
+    font-size: 40px;
+}
+
+.regular-div {
+    background-color: darkorchid;
+}
