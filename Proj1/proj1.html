@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./styles.js"></script>
+    <title>Runda's Homepage</title>
+</head>
+<body>
+    <!-- First page -->
+    <div class="splash-page">
+        <div class="logo" id="logo" style="position: absolute; left: 0%; background-color: #F5F3F1;">
+            <img src="./images/logo.jpeg" alt="My Logo" width="100px" height="100px">
+        </div>
+        <div class="splash-decoration-block">
+            <div class="portrait">
+                <img class="portrait-img" src="./images/portrait.jpg" alt="portrait" width="335px" height="auto"> 
+            </div>
+            <div class="navbar">
+                <div class="nav">
+                    <div class="nav-button">
+                        <a href="#logo">About</a>
+                    </div>
+                    <div class="nav-button"> <a href="#experiences">Experiences</a></div>
+                    <div class="nav-button"> <a href="./files/Runda_Tian_Resume.pdf">Resume</a></div>
+                    <div class="nav-button"> <a href="https://github.com/8and24and10" target="_blank">GitHub</a></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="headline">
+            <div><h2>你好！This is</h2></div>
+            <div><h1>🏀 Runda Tian 😈</h1></div>
+            <div><h3 style="position: relative; left: 20%;">MEng Candidate @ UC Berkeley</h3></div>
+            <div><h3 style="position: relative; left: 20%;">Civil & Environmental Engineering</h3></div>
+            <div class="text">   
+                <p>I am currently a MEng student at UC Berkeley studying Civil and Environmental Engineering 
+                    with concentration in System Engineering. I love basketball and Marvel Comics. Feel free to contact me!
+                </p>
+            </div> 
+            
+            <div class="contactInfo" onclick="QR_pop_up()">
+                <p>Contect Me</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-QRcode">
+        <div class="contact-X"><img src="./images/close.png" onclick="close_contact_QRcode()"></div>
+        <div class="QRcodes">
+            <div class="QRpic"><img src="./images/wechat.jpg" width="300px" height="auto"></div>
+            <div class="QRpic"><img src="./images/linkedin.jpg" width="300px" height="auto"></div>
+        </div>
+    </div>
+
+    <!-- Second page -->
+    <div class="experiences" id="experiences">
+        <div class="portfolio">
+            <div class="portfolio-block">
+                <div class="proj-list-item">
+                    <h2>COVID-19 Data Modelling</h2>
+                </div>
+                <div class="proj-list-item">
+                    <h2>Interactive Financial Dashboard</h2>
+                </div>
+                <div class="proj-list-item">
+                    <h2>Social Network Rumors Detection</h2>
+                </div>
+            </div>
+
+            <div class="portfolio-block">
+                <div class="proj-image">
+                    <img src="./images/stock.png" alt="" >
+                </div>
+                <div class="proj-name">
+                    <p>Interactive Financial Dashboard</p>
+                </div>
+                <div class="proj-description">
+                    <p>In an effort to combat income inequality, our team created a sentiment 
+                        analysis model using FinBERT, a lexicon-based machine learning model, 
+                        to democratize financial knowledge for the average investor to maximize 
+                        their probability of financial success. By applying sentiment analysis, 
+                        we will be able to calculate the current market sentiment based on 
+                        financial news that the average investor ingests. To do so, we will 
+                        implement the FinBERT model, a pre-trained NLP model using a vast 
+                        financial corpus, thereby fine-tuning it for financial sentiment 
+                        classification.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-block">
+                <div class="proj-image">
+                    <img src="./images/covid.jpg" alt="" >
+                </div>
+                <div class="proj-name">
+                    <p>COVID-19 Data Modelling</p>
+                </div>
+                <div class="proj-description">
+                    <p>This project is aimed to model the spread of COVID-19 in California State. 
+                        In particular, we apply linear regression models to predict COVID-19 deaths 
+                        for counties in California. Modeling and analysis have been carried out based 
+                        on datasets detailing confirmed cases of COVID-19. Creating data-driven models 
+                        enables us to prove if lockdown policies should be extended. It also has potential 
+                        to provide estimates on how human activities will be directly affected by this 
+                        disease in the future.
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolio-block">
+                <div class="proj-image">
+                    <img src="./images/rumor.webp" alt="" >
+                </div>
+                <div class="proj-name">
+                    <p>Social Network Rumors Detection</p>
+                </div>
+                <div class="proj-description">
+                    <p>Since its inception, Social Media has been serving as a medium for spreading conspiracy 
+                        theories, misinformation, and confusion and in recent times, Anti-vaccination movements 
+                        have been gaining momentum since the approval of COVID vaccines. 
+                        The individuals/communities who refuse to wear masks, typically do not believe in the 
+                        effectiveness of masks and perceive it as a threat to their rights and some even believe 
+                        that the COVID-19 pandemic is a hoax. The influencers in such communities often aggravate 
+                        the situation by strengthening negative hashtag trends and can potentially become a hazard 
+                        to public health. Thus, as a responsible social media platform (i.e. Twitter) we analyze 
+                        and try to understand the network of anti-vaccination and anti-mask hashtags to determine 
+                        an effective strategy to tackle these movements.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
